@@ -41,7 +41,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
             <span className={`
             h-[1px] inline-block bg-light 
             absolute left-0 -bottom-0.5
-            group-hover:w-full transition-[width] ease duration-300
+            group-hover:w-1/2 transition-[width] ease duration-300
             ${router.asPath === href ? "w-full" : "w-0"}
             dark:bg-dark`}
             
@@ -65,9 +65,9 @@ const NavBar = () => {
         dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8      ">
 
         <button className="flex-col justify-center items-center hidden lg:flex" onClick={handleClick}>
-            <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
-            <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-            <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 translate-y-1' : 'translate-y-0.5'}`}></span>
+            <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-5 rounded-sm ${isOpen ? 'rotate-45 translate-y-2.5' : '-translate-y-0.5'}`}></span>
+            <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-5 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+            <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-5 rounded-sm ${isOpen ? '-rotate-45 translate-y-0.5' : 'translate-y-0.5'}`}></span>
         </button>
         
 
@@ -79,25 +79,25 @@ const NavBar = () => {
             </nav>
             
             <nav className="flex items-center justify-center flex-wrap">
-                <motion.a href="https://twitter.com" target={"_blank"}
+                <motion.a href="https://x.com/home" target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mx-3">
                     <TwitterIcon />
                 </motion.a>
-                <motion.a href="https://twitter.com" target={"_blank"}
+                <motion.a href="https://github.com/Tobgaybolo" target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mx-3">
                     <GithubIcon />
                 </motion.a>
-                <motion.a href="https://twitter.com" target={"_blank"}
+                <motion.a href="https://www.linkedin.com/in/kinley-tobgay-lhendrup-0358a8353/" target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mx-3">
                     <LinkedInIcon />
                 </motion.a>
-                <motion.a href="https://twitter.com" target={"_blank"}
+                <motion.a href="https://www.pinterest.com/klhendrup/" target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mx-3 bg-light rounded-full">
@@ -135,25 +135,25 @@ const NavBar = () => {
             </nav>
             
             <nav className="flex items-center justify-center flex-wrap mt-2">
-                <motion.a href="https://twitter.com" target={"_blank"}
+                <motion.a href="https://x.com/home" target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mr-3 sm:mx-1">
                     <TwitterIcon />
                 </motion.a>
-                <motion.a href="https://twitter.com" target={"_blank"}
+                <motion.a href="https://github.com/Tobgaybolo" target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1">
                     <GithubIcon />
                 </motion.a>
-                <motion.a href="https://twitter.com" target={"_blank"}
+                <motion.a href="https://www.linkedin.com/in/kinley-tobgay-lhendrup-0358a8353/" target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mx-3 sm:mx-1">
                     <LinkedInIcon />
                 </motion.a>
-                <motion.a href="https://twitter.com" target={"_blank"}
+                <motion.a href="https://www.pinterest.com/klhendrup/" target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className="w-6 mx-3 bg-light rounded-full sm:mx-1">

@@ -47,15 +47,15 @@ const Education = () => {
         className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]' />
         <ul className='w-full flex flex-col items-start justify-between ml-4 v'>
             <Details 
-                type="Bachelor of Science in Computer Science"
-                time="2020-2024"
-                place="Royal University of Bhutan, Thimphu"
-                info="Studied core computer science subjects including algorithms, data structures, and software engineering."
+                type="Bachelor&apos;s Degree in Software Engineering"
+                time="2023-20. . . ."
+                place="College of Science and Technology, Chhukha"
+                info="Studying core computer science subjects including algorithms and data structures."
             />
             <Details 
-                type="High School Diploma"
-                time="2018-2020"
-                place="Thimphu High School, Thimphu"
+                type="High School"
+                time="2019-2022"
+                place="Damphu Central School, Tsirang"
                 info="Completed high school with a focus on science and mathematics."
             />
         </ul>
