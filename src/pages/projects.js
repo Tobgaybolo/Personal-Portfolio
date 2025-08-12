@@ -107,14 +107,14 @@ const projects = () => {
                 <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <FeaturedProject
-                        title= "A TikTok Clone"
-                        img={project1}
-                        github="/"
-                        summary="A dynamic video-sharing app built with React, JavaScript, and Tailwind CSS, 
-                        featuring seamless video playback, user profiles, and trending feeds. Integrated with 
-                        Supabase for cloud storage, it offers real-time data fetching and a responsive, modern 
-                        UI for an engaging social media experience."    
-                        link="/"
+                        title= "A Pinterest Clone"
+                        img={project2}
+                        github="https://github.com/Ugyenk/Pinterest_Clone"
+                        summary="A responsive web app built with React, Tailwind CSS, and Firebase, mimicking 
+                        Pinterest's core features. Users can upload, save, and browse pins, with Firebase handling 
+                        authentication and real-time database storage. The UI includes infinite scrolling, dynamic grids, 
+                        and interactive pin cards for a seamless user experience."    
+                        link="https://github.com/Ugyenk/Pinterest_Clone"
                         type="Featured Project"
                         />
                     </div>
@@ -139,13 +139,13 @@ const projects = () => {
                     <div className='col-span-12'>
                         <FeaturedProject
                         title= "A Pinterest Clone"
-                        img={project2}
-                        github="https://github.com/Ugyenk/Pinterest_Clone"
-                        summary="A responsive web app built with React, Tailwind CSS, and Firebase, mimicking 
-                        Pinterest's core features. Users can upload, save, and browse pins, with Firebase handling 
-                        authentication and real-time database storage. The UI includes infinite scrolling, dynamic grids, 
-                        and interactive pin cards for a seamless user experience."    
-                        link="https://github.com/Ugyenk/Pinterest_Clone"
+                        img={project1}
+                        github="/"
+                        summary="A dynamic video-sharing app built with React, JavaScript, and Tailwind CSS, 
+                        featuring seamless video playback, user profiles, and trending feeds. Integrated with 
+                        Supabase for cloud storage, it offers real-time data fetching and a responsive, modern 
+                        UI for an engaging social media experience."    
+                        link="/"
                         type="Featured Project"
                         />
                     </div>
