@@ -5,7 +5,8 @@ import Layout from '@/components/Layout'
 import Link from 'next/link'
 import { GithubIcon } from '@/components/Icons'
 import Image from 'next/image'
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import project1 from '../../public/images/projects/tiktok.png'
+import project2 from '../../public/images/projects/pinterest.png'
 import FramerImage from 'next/legacy/image'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -35,9 +36,9 @@ return (
             </Link>
             <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
             <div className='mt-2 flex items-center'>
-                <Link href={github} target='_blank' className='w-10'> <GithubIcon /> </Link>
-                <Link href={link} target='_blank'
-                className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark hover:bg-light hover:text-dark
+                {/* <Link href={github} target='_blank' className='w-10'> <GithubIcon /> </Link> */}
+                <Link href={link} target='https://github.com/Ugyenk/Pinterest_Clone'
+                className='ml- rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark hover:bg-light hover:text-dark
                 dark:hover:bg-dark dark:hover:text-light
                 dark:hover:border-light
                 dark:hover:border-solid border-2 border-dark hover:border-light
@@ -100,23 +101,24 @@ const projects = () => {
                 className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'
                 />
 
-                <div className='w-full flex flex-col items-center justify-between'>Work In Pregress</div>
+                <div className='w-full flex flex-col items-center justify-between'></div>
 
 
-                {/* <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+                <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <FeaturedProject
-                        title= "Crypto Screener Application"
+                        title= "A TikTok Clone"
                         img={project1}
                         github="/"
-                        summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                        local currency."    
+                        summary="A dynamic video-sharing app built with React, JavaScript, and Tailwind CSS, 
+                        featuring seamless video playback, user profiles, and trending feeds. Integrated with 
+                        Supabase for cloud storage, it offers real-time data fetching and a responsive, modern 
+                        UI for an engaging social media experience."    
                         link="/"
                         type="Featured Project"
                         />
                     </div>
-                    <div className='col-span-6 sm:col-span-12'>
+                    {/* <div className='col-span-6 sm:col-span-12'>
                         <Project
                         title= "Crypto Screener Application"
                         img={project1}
@@ -133,21 +135,22 @@ const projects = () => {
                         link="/"
                         type="Featured Project"
                         />
-                    </div>
+                    </div> */}
                     <div className='col-span-12'>
                         <FeaturedProject
-                        title= "Crypto Screener Application"
-                        img={project1}
-                        github="/"
-                        summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                        local currency."    
-                        link="/"
+                        title= "A Pinterest Clone"
+                        img={project2}
+                        github="https://github.com/Ugyenk/Pinterest_Clone"
+                        summary="A responsive web app built with React, Tailwind CSS, and Firebase, mimicking 
+                        Pinterest's core features. Users can upload, save, and browse pins, with Firebase handling 
+                        authentication and real-time database storage. The UI includes infinite scrolling, dynamic grids, 
+                        and interactive pin cards for a seamless user experience."    
+                        link="https://github.com/Ugyenk/Pinterest_Clone"
                         type="Featured Project"
                         />
                     </div>
 
-                </div> */}
+                </div>
 
             </Layout>
         </main>
